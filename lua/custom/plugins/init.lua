@@ -5,4 +5,11 @@
 
 ---@module 'lazy'
 ---@type LazySpec
-return {}
+return {
+  require 'custom.plugins.dash',
+  require 'custom.plugins.ufo',
+  require 'custom.plugins.harpoon',
+  { 'marilari88/twoslash-queries.nvim' },
+  { 'camilledejoye/nvim-lsp-selection-range' },
+  { 'tpope/vim-sleuth' },
+}

@@ -19,7 +19,13 @@ return {
   ---@type neotree.Config
   opts = {
     filesystem = {
+      bind_to_cwd = true,
+      cwd_target = {
+        sidebar = 'global',
+        current = 'global',
+      },
       window = {
+        position = 'right',
         mappings = {
           ['\\'] = 'close_window',
         },
